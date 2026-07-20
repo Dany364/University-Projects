@@ -1,0 +1,93 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Allegro Netrev Import Logic                                      )
+(                                                                     )
+(    Drawing          : PROIECT CAD.brd                               )
+(    Software Version : 17.2S025                                      )
+(    Date/Time        : Sun Jan 04 21:39:43 2026                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+------ Directives ------------
+
+Ripup etch:                  No
+Ripup delete first segment:  No
+Ripup retain bondwire:       No
+Ripup symbols:               Always
+Missing symbol has error:    No
+DRC update:                  Yes
+Schematic directory:         'C:\USERS\DANY\DESKTOP\allegro'
+Design Directory:            'C:/USERS/DANY/DESKTOP/allegro'
+Old design name:             'C:/USERS/DANY/DESKTOP/allegro/PROIECT CAD.brd'
+New design name:             'C:/USERS/DANY/DESKTOP/allegro/PROIECT CAD.brd'
+
+CmdLine: netrev.exe -y 1 -n -u -i C:\USERS\DANY\DESKTOP\allegro C:\USERS\DANY\DESKTOP\allegro\PROIECT CAD.brd C:\USERS\DANY\DESKTOP\allegro\PROIECT CAD.brd
+
+------ Preparing to read pst files ------
+
+Starting to read C:/USERS/DANY/DESKTOP/allegro/pstchip.dat 
+   Finished reading C:/USERS/DANY/DESKTOP/allegro/pstchip.dat (00:00:00.06)
+Starting to read C:/USERS/DANY/DESKTOP/allegro/pstxprt.dat 
+   Finished reading C:/USERS/DANY/DESKTOP/allegro/pstxprt.dat (00:00:00.00)
+Starting to read C:/USERS/DANY/DESKTOP/allegro/pstxnet.dat 
+   Finished reading C:/USERS/DANY/DESKTOP/allegro/pstxnet.dat (00:00:00.00)
+
+------ Oversights/Warnings/Errors ------
+
+
+
+Note: SECTION property definition created
+
+------ Library Paths ------
+MODULEPATH =  . 
+           D:/CAD/share/local/pcb/modules 
+
+PSMPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           D:/CAD/share/local/pcb/symbols 
+           D:/CAD/share/pcb/pcb_lib/symbols 
+           D:/CAD/share/pcb/allegrolib/symbols 
+
+PADPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           D:/CAD/share/local/pcb/padstacks 
+           D:/CAD/share/pcb/pcb_lib/symbols 
+           D:/CAD/share/pcb/allegrolib/symbols 
+
+
+------ Summary Statistics ------
+
+
+netrev run on Jan 4 21:39:43 2026
+   DESIGN NAME : 'PROIECT CAD'
+   PACKAGING ON Jul 30 2017 03:29:02
+
+   COMPILE 'logic'
+   CHECK_PIN_NAMES OFF
+   CROSS_REFERENCE OFF
+   FEEDBACK OFF
+   INCREMENTAL OFF
+   INTERFACE_TYPE PHYSICAL
+   MAX_ERRORS 500
+   MERGE_MINIMUM 5
+   NET_NAME_CHARS '#%&()*+-./:=>?@[]^_`|'
+   NET_NAME_LENGTH 24
+   OVERSIGHTS ON
+   REPLACE_CHECK OFF
+   SINGLE_NODE_NETS ON
+   SPLIT_MINIMUM 0
+   SUPPRESS   20
+   WARNINGS ON
+
+ No error detected
+ No oversight detected
+ No warning detected
+
+cpu time      0:00:50
+elapsed time  0:00:01
+

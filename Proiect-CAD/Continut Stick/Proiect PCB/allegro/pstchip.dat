@@ -1,0 +1,216 @@
+FILE_TYPE=LIBRARY_PARTS;
+{ Using PSTWRITER 17.2.0 d001Jan-04-2026 at 21:39:42}
+primitive 'CAP POL_CAP196_10UF/50V';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='CAP POL';
+    JEDEC_TYPE='CAP196';
+    VALUE='10uF/50V';
+  end_body;
+end_primitive;
+primitive 'CAP NP_CAPCK05_100NF';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='CAP NP';
+    JEDEC_TYPE='CAPCK05';
+    VALUE='100nF';
+  end_body;
+end_primitive;
+primitive 'CON2_JUMPER2_0-10 VDC';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='CON2';
+    JEDEC_TYPE='JUMPER2';
+    VALUE='0-10 VDC';
+  end_body;
+end_primitive;
+primitive 'CON2_JUMPER2_12 VDC INPUT';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='CON2';
+    JEDEC_TYPE='JUMPER2';
+    VALUE='12 VDC INPUT';
+  end_body;
+end_primitive;
+primitive 'LED_DO35_YELLOW LED';
+  pin
+    'ANODE':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    'CATHODE':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='LED';
+    JEDEC_TYPE='DO35';
+    VALUE='YELLOW LED';
+  end_body;
+end_primitive;
+primitive 'LED_DO35_RED LED';
+  pin
+    'ANODE':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    'CATHODE':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='LED';
+    JEDEC_TYPE='DO35';
+    VALUE='RED LED';
+  end_body;
+end_primitive;
+primitive 'DIODE ZENER_DO41_10 V';
+  pin
+    'ANODE':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    'CATHODE':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='DIODE ZENER';
+    JEDEC_TYPE='DO41';
+    VALUE='10 V';
+  end_body;
+end_primitive;
+primitive 'JUMPER_JUMPER2_JUMPER';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='JUMPER';
+    JEDEC_TYPE='JUMPER2';
+    VALUE='JUMPER';
+  end_body;
+end_primitive;
+primitive 'R_RES400_1K';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='R';
+    JEDEC_TYPE='RES400';
+    VALUE='1K';
+  end_body;
+end_primitive;
+primitive 'R_RES400_1.2K';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='R';
+    JEDEC_TYPE='RES400';
+    VALUE='1.2K';
+  end_body;
+end_primitive;
+primitive 'LM3914BUN_1_DIP18_4_LM3914';
+  pin
+    'LED1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    'V-':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+    'V+':
+      PIN_NUMBER='(3)';
+      PINUSE='UNSPEC';
+    'RLO':
+      PIN_NUMBER='(4)';
+      PINUSE='UNSPEC';
+    'SIGIN':
+      PIN_NUMBER='(5)';
+      PINUSE='UNSPEC';
+    'RHI':
+      PIN_NUMBER='(6)';
+      PINUSE='UNSPEC';
+    'REFOUT':
+      PIN_NUMBER='(7)';
+      PINUSE='UNSPEC';
+    'REF ADJ':
+      PIN_NUMBER='(8)';
+      PINUSE='UNSPEC';
+    'MODE':
+      PIN_NUMBER='(9)';
+      PINUSE='UNSPEC';
+    'LED10':
+      PIN_NUMBER='(10)';
+      PINUSE='UNSPEC';
+    'LED9':
+      PIN_NUMBER='(11)';
+      PINUSE='UNSPEC';
+    'LED8':
+      PIN_NUMBER='(12)';
+      PINUSE='UNSPEC';
+    'LED7':
+      PIN_NUMBER='(13)';
+      PINUSE='UNSPEC';
+    'LED6':
+      PIN_NUMBER='(14)';
+      PINUSE='UNSPEC';
+    'LED5':
+      PIN_NUMBER='(15)';
+      PINUSE='UNSPEC';
+    'LED4':
+      PIN_NUMBER='(16)';
+      PINUSE='UNSPEC';
+    'LED3':
+      PIN_NUMBER='(17)';
+      PINUSE='UNSPEC';
+    'LED2':
+      PIN_NUMBER='(18)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='LM3914BUN_1';
+    JEDEC_TYPE='DIP18_4';
+    VALUE='LM3914';
+  end_body;
+end_primitive;
+END.

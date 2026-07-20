@@ -1,0 +1,195 @@
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   1  |
+|------------------------------------------------------------------------------|
+|  C:/USERS/DANY/DESKTOP/allegro/PROIECT CAD.brd                               |
+|                                                    Sun Jan 04 21:39:43 2026  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |                net     pins                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+  +V           pins ADDED TO this new net
+                                 C1.1           C2.1           CN2.1          
+                                 D1.1           D2.1           D3.1           
+                                 D4.1           D5.1           D6.1           
+                                 D7.1           D8.1           D9.1           
+                                 D10.1          J1.2           R1.1           
+                                 U1.3           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  GND          pins ADDED TO this new net
+                                 C1.2           C2.2           CN1.1          
+                                 CN2.2          D11.1          R2.2           
+                                 U1.2           U1.4           U1.8           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N02197       pins ADDED TO this new net
+                                 J1.1           U1.9           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N02280       pins ADDED TO this new net
+                                 D11.2          R1.2           U1.6           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N12880       pins ADDED TO this new net
+                                 D10.2          U1.10          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N12887       pins ADDED TO this new net
+                                 D9.2           U1.11          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N12899       pins ADDED TO this new net
+                                 D8.2           U1.12          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N12911       pins ADDED TO this new net
+                                 D7.2           U1.13          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N12923       pins ADDED TO this new net
+                                 D6.2           U1.14          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N12930       pins ADDED TO this new net
+                                 D5.2           U1.15          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N12934       pins ADDED TO this new net
+                                 D4.2           U1.16          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N12941       pins ADDED TO this new net
+                                 D3.2           U1.17          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N12948       pins ADDED TO this new net
+                                 D2.2           U1.18          
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   2  |
+|------------------------------------------------------------------------------|
+|  C:/USERS/DANY/DESKTOP/allegro/PROIECT CAD.brd                               |
+|                                                    Sun Jan 04 21:39:43 2026  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |                net     pins                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+  N12955       pins ADDED TO this new net
+                                 D1.2           U1.1           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N13488       pins ADDED TO this new net
+                                 R2.1           U1.7           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N13540       pins ADDED TO this new net
+                                 CN1.2          U1.5           
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   3  |
+|------------------------------------------------------------------------------|
+|  C:/USERS/DANY/DESKTOP/allegro/PROIECT CAD.brd                               |
+|                                                    Sun Jan 04 21:39:43 2026  |
+|------------------------------------------------------------------------------|
+| COMPONENT DEFINITION added to design                                         |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    device type                                                               |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ CAP NP_CAPCK05_100NF
+ CAP POL_CAP196_10UF/50V
+ CON2_JUMPER2_0-10 VDC
+ CON2_JUMPER2_12 VDC INPUT
+ DIODE ZENER_DO41_10 V
+ JUMPER_JUMPER2_JUMPER
+ LED_DO35_RED LED
+ LED_DO35_YELLOW LED
+ LM3914BUN_1_DIP18_4_LM3914
+ R_RES400_1.2K
+ R_RES400_1K
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   4  |
+|------------------------------------------------------------------------------|
+|  C:/USERS/DANY/DESKTOP/allegro/PROIECT CAD.brd                               |
+|                                                    Sun Jan 04 21:39:43 2026  |
+|------------------------------------------------------------------------------|
+| COMPONENTS ADDED to design                                                   |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    ref des        |    device type                                           |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ C1                  CAP POL_CAP196_10UF/50V 
+ C2                  CAP NP_CAPCK05_100NF  
+ CN1                 CON2_JUMPER2_0-10 VDC 
+ CN2                 CON2_JUMPER2_12 VDC INPUT 
+ D1                  LED_DO35_YELLOW LED   
+ D2                  LED_DO35_YELLOW LED   
+ D3                  LED_DO35_YELLOW LED   
+ D4                  LED_DO35_YELLOW LED   
+ D5                  LED_DO35_YELLOW LED   
+ D6                  LED_DO35_RED LED      
+ D7                  LED_DO35_RED LED      
+ D8                  LED_DO35_RED LED      
+ D9                  LED_DO35_RED LED      
+ D10                 LED_DO35_RED LED      
+ D11                 DIODE ZENER_DO41_10 V 
+ J1                  JUMPER_JUMPER2_JUMPER 
+ R1                  R_RES400_1K           
+ R2                  R_RES400_1.2K         
+ U1                  LM3914BUN_1_DIP18_4_LM3914 
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   5  |
+|------------------------------------------------------------------------------|
+|  C:/USERS/DANY/DESKTOP/allegro/PROIECT CAD.brd                               |
+|                                                    Sun Jan 04 21:39:43 2026  |
+|------------------------------------------------------------------------------|
+| SLOT PROPERTIES added to design                                              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   slot_id    |   x   |   y   |   property   |             value              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ C1.2                           PRIM_FILE      .\pstchip.dat
+ C1.2                           SECTION        
+ C2.2                           PRIM_FILE      .\pstchip.dat
+ C2.2                           SECTION        
+ CN1.2                          PRIM_FILE      .\pstchip.dat
+ CN1.2                          SECTION        
+ CN2.2                          PRIM_FILE      .\pstchip.dat
+ CN2.2                          SECTION        
+ D1.2                           PRIM_FILE      .\pstchip.dat
+ D1.2                           SECTION        
+ D2.2                           PRIM_FILE      .\pstchip.dat
+ D2.2                           SECTION        
+ D3.2                           PRIM_FILE      .\pstchip.dat
+ D3.2                           SECTION        
+ D4.2                           PRIM_FILE      .\pstchip.dat
+ D4.2                           SECTION        
+ D5.2                           PRIM_FILE      .\pstchip.dat
+ D5.2                           SECTION        
+ D6.2                           PRIM_FILE      .\pstchip.dat
+ D6.2                           SECTION        
+ D7.2                           PRIM_FILE      .\pstchip.dat
+ D7.2                           SECTION        
+ D8.2                           PRIM_FILE      .\pstchip.dat
+ D8.2                           SECTION        
+ D9.2                           PRIM_FILE      .\pstchip.dat
+ D9.2                           SECTION        
+ D10.2                          PRIM_FILE      .\pstchip.dat
+ D10.2                          SECTION        
+ D11.2                          PRIM_FILE      .\pstchip.dat
+ D11.2                          SECTION        
+ J1.2                           PRIM_FILE      .\pstchip.dat
+ J1.2                           SECTION        
+ R1.2                           PRIM_FILE      .\pstchip.dat
+ R1.2                           SECTION        
+ R2.2                           PRIM_FILE      .\pstchip.dat
+ R2.2                           SECTION        
+ U1.2                           PRIM_FILE      .\pstchip.dat
+ U1.2                           SECTION        
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   6  |
+|------------------------------------------------------------------------------|
+|  C:/USERS/DANY/DESKTOP/allegro/PROIECT CAD.brd                               |
+|                                                    Sun Jan 04 21:39:43 2026  |
+|------------------------------------------------------------------------------|
+| SLOT PROPERTIES added to design                                              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   slot_id    |   x   |   y   |   property   |             value              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|------------------------------------------------------------------------------|
+|       Nets changed          :      54                                        |
+|       Comp definitions added:      11                                        |
+|       Components added      :      19                                        |
+|       Slot property added   :      38                                        |
+|                                                                              |
+|   Total ECO changes reported:     122                                        |
+|------------------------------------------------------------------------------|

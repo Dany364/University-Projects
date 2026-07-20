@@ -1,0 +1,57 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    NC DRILL Log                                                     )
+(                                                                     )
+(    Drawing          : PROIECT CAD 2-NEW.brd                         )
+(    Software Version : 17.2S025                                      )
+(    Date/Time        : Sat Jan 24 11:25:51 2026                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+
+ Processing NC Parameters file 'nc_param.txt' ...
+
+ NC PARAMETERS
+ -------------
+
+ FORMAT   		2.5
+ MACHINE-OFFSET		x:0.00000	y:0.00000   (mm)
+ FEEDRATE		1
+ COORDINATES		ABSOLUTE
+ OUTPUT-UNITS		METRIC
+ TOOL-ORDER		INCREASING
+ REPEAT-CODES		YES
+ SUPPRESS-LEAD-ZEROES	NO
+ SUPPRESS-TRAIL-ZEROES	NO
+ SUPPRESS-EQUAL		NO
+ TOOL-SELECT		NO
+ HEADER			none
+ LEADER			12
+ CODE			ASCII
+ SEPARATE		NO
+ SEPARATE-ROUTING	NO
+ OPTIMIZE_DRILLING	NO
+ ENHANCED_EXCELLON	NO
+ SCALE			1.000000
+
+
+
+ Drill files being output to directory 'C:/Users/Dany/Desktop/Proiect TCAD 2026- Grupa 424D-Petrescu-Stoica-Dumitrascu/Continut Stick/Proiect PCB/allegro' ...
+
+
+
+     'PROIECT CAD 2-NEW-1-2.drl' created for holes connecting TOP and BOTTOM
+     -----------------------------------------------------------------------
+
+           Num     Size      +/- Tolerance     Plating   Quantity
+
+            1.   0.6350    0.0000/  0.0000      PLATED         20
+            2.   0.9144    0.0000/  0.0000      PLATED         28
+            3.   1.0668    0.0000/  0.0000      PLATED          6
+            4.   3.2000    0.0000/  0.0000  NON_PLATED          3
+
+     ---- Total holes:                                         57
+
+     ---- Total head travel:              2.26 feet (0.69 meters)
+

@@ -1,0 +1,200 @@
+FILE_TYPE = EXPANDEDPARTLIST;
+{ Using PSTWRITER 17.2.0 d001Jan-04-2026 at 21:39:42 }
+DIRECTIVES
+ PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
+ ROOT_DRAWING='PROIECT CAD';
+ POST_TIME='Jul 30 2017 03:29:02';
+ SOURCE_TOOL='CAPTURE_WRITER';
+END_DIRECTIVES;
+
+PART_NAME
+ C1 'CAP POL_CAP196_10UF/50V':;
+
+SECTION_NUMBER 1
+ '@PROIECT CAD.SCHEMATIC1(SCH_1):INS6631@DISCRETE.CAP POL.NORMAL(CHIPS)':
+ C_PATH='@\proiect cad\.schematic1(sch_1):ins6631@discrete.\cap pol.normal\(chips)',
+ P_PATH='@\proiect cad\.schematic1(sch_1):page_ins6631@discrete.\cap pol.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C2 'CAP NP_CAPCK05_100NF':;
+
+SECTION_NUMBER 1
+ '@PROIECT CAD.SCHEMATIC1(SCH_1):INS6796@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@\proiect cad\.schematic1(sch_1):ins6796@discrete.\cap np.normal\(chips)',
+ P_PATH='@\proiect cad\.schematic1(sch_1):page_ins6796@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CN1 'CON2_JUMPER2_0-10 VDC':;
+
+SECTION_NUMBER 1
+ '@PROIECT CAD.SCHEMATIC1(SCH_1):INS115@CONNECTOR.CON2.NORMAL(CHIPS)':
+ C_PATH='@\proiect cad\.schematic1(sch_1):ins115@connector.\con2.normal\(chips)',
+ P_PATH='@\proiect cad\.schematic1(sch_1):page_ins115@connector.\con2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CN2 'CON2_JUMPER2_12 VDC INPUT':;
+
+SECTION_NUMBER 1
+ '@PROIECT CAD.SCHEMATIC1(SCH_1):INS99@CONNECTOR.CON2.NORMAL(CHIPS)':
+ C_PATH='@\proiect cad\.schematic1(sch_1):ins99@connector.\con2.normal\(chips)',
+ P_PATH='@\proiect cad\.schematic1(sch_1):page_ins99@connector.\con2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D1 'LED_DO35_YELLOW LED':;
+
+SECTION_NUMBER 1
+ '@PROIECT CAD.SCHEMATIC1(SCH_1):INS315@DISCRETE.LED.NORMAL(CHIPS)':
+ C_PATH='@\proiect cad\.schematic1(sch_1):ins315@discrete.\led.normal\(chips)',
+ P_PATH='@\proiect cad\.schematic1(sch_1):page_ins315@discrete.\led.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D10 'LED_DO35_RED LED':;
+
+SECTION_NUMBER 1
+ '@PROIECT CAD.SCHEMATIC1(SCH_1):INS459@DISCRETE.LED.NORMAL(CHIPS)':
+ C_PATH='@\proiect cad\.schematic1(sch_1):ins459@discrete.\led.normal\(chips)',
+ P_PATH='@\proiect cad\.schematic1(sch_1):page_ins459@discrete.\led.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D11 'DIODE ZENER_DO41_10 V':;
+
+SECTION_NUMBER 1
+ '@PROIECT CAD.SCHEMATIC1(SCH_1):INS1317@DISCRETE.DIODE ZENER.NORMAL(CHIPS)':
+ C_PATH='@\proiect cad\.schematic1(sch_1):ins1317@discrete.\diode zener.normal\(chips)',
+ P_PATH='@\proiect cad\.schematic1(sch_1):page_ins1317@discrete.\diode zener.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D2 'LED_DO35_YELLOW LED':;
+
+SECTION_NUMBER 1
+ '@PROIECT CAD.SCHEMATIC1(SCH_1):INS331@DISCRETE.LED.NORMAL(CHIPS)':
+ C_PATH='@\proiect cad\.schematic1(sch_1):ins331@discrete.\led.normal\(chips)',
+ P_PATH='@\proiect cad\.schematic1(sch_1):page_ins331@discrete.\led.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D3 'LED_DO35_YELLOW LED':;
+
+SECTION_NUMBER 1
+ '@PROIECT CAD.SCHEMATIC1(SCH_1):INS347@DISCRETE.LED.NORMAL(CHIPS)':
+ C_PATH='@\proiect cad\.schematic1(sch_1):ins347@discrete.\led.normal\(chips)',
+ P_PATH='@\proiect cad\.schematic1(sch_1):page_ins347@discrete.\led.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D4 'LED_DO35_YELLOW LED':;
+
+SECTION_NUMBER 1
+ '@PROIECT CAD.SCHEMATIC1(SCH_1):INS363@DISCRETE.LED.NORMAL(CHIPS)':
+ C_PATH='@\proiect cad\.schematic1(sch_1):ins363@discrete.\led.normal\(chips)',
+ P_PATH='@\proiect cad\.schematic1(sch_1):page_ins363@discrete.\led.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D5 'LED_DO35_YELLOW LED':;
+
+SECTION_NUMBER 1
+ '@PROIECT CAD.SCHEMATIC1(SCH_1):INS379@DISCRETE.LED.NORMAL(CHIPS)':
+ C_PATH='@\proiect cad\.schematic1(sch_1):ins379@discrete.\led.normal\(chips)',
+ P_PATH='@\proiect cad\.schematic1(sch_1):page_ins379@discrete.\led.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D6 'LED_DO35_RED LED':;
+
+SECTION_NUMBER 1
+ '@PROIECT CAD.SCHEMATIC1(SCH_1):INS395@DISCRETE.LED.NORMAL(CHIPS)':
+ C_PATH='@\proiect cad\.schematic1(sch_1):ins395@discrete.\led.normal\(chips)',
+ P_PATH='@\proiect cad\.schematic1(sch_1):page_ins395@discrete.\led.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D7 'LED_DO35_RED LED':;
+
+SECTION_NUMBER 1
+ '@PROIECT CAD.SCHEMATIC1(SCH_1):INS411@DISCRETE.LED.NORMAL(CHIPS)':
+ C_PATH='@\proiect cad\.schematic1(sch_1):ins411@discrete.\led.normal\(chips)',
+ P_PATH='@\proiect cad\.schematic1(sch_1):page_ins411@discrete.\led.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D8 'LED_DO35_RED LED':;
+
+SECTION_NUMBER 1
+ '@PROIECT CAD.SCHEMATIC1(SCH_1):INS427@DISCRETE.LED.NORMAL(CHIPS)':
+ C_PATH='@\proiect cad\.schematic1(sch_1):ins427@discrete.\led.normal\(chips)',
+ P_PATH='@\proiect cad\.schematic1(sch_1):page_ins427@discrete.\led.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D9 'LED_DO35_RED LED':;
+
+SECTION_NUMBER 1
+ '@PROIECT CAD.SCHEMATIC1(SCH_1):INS443@DISCRETE.LED.NORMAL(CHIPS)':
+ C_PATH='@\proiect cad\.schematic1(sch_1):ins443@discrete.\led.normal\(chips)',
+ P_PATH='@\proiect cad\.schematic1(sch_1):page_ins443@discrete.\led.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J1 'JUMPER_JUMPER2_JUMPER':;
+
+SECTION_NUMBER 1
+ '@PROIECT CAD.SCHEMATIC1(SCH_1):INS2211@CONNECTOR.JUMPER.NORMAL(CHIPS)':
+ C_PATH='@\proiect cad\.schematic1(sch_1):ins2211@connector.\jumper.normal\(chips)',
+ P_PATH='@\proiect cad\.schematic1(sch_1):page_ins2211@connector.\jumper.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R1 'R_RES400_1K':;
+
+SECTION_NUMBER 1
+ '@PROIECT CAD.SCHEMATIC1(SCH_1):INS2298@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@\proiect cad\.schematic1(sch_1):ins2298@discrete.\r.normal\(chips)',
+ P_PATH='@\proiect cad\.schematic1(sch_1):page_ins2298@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R2 'R_RES400_1.2K':;
+
+SECTION_NUMBER 1
+ '@PROIECT CAD.SCHEMATIC1(SCH_1):INS1771@DISCRETE.R.NORMAL(CHIPS)':
+ C_PATH='@\proiect cad\.schematic1(sch_1):ins1771@discrete.\r.normal\(chips)',
+ P_PATH='@\proiect cad\.schematic1(sch_1):page_ins1771@discrete.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U1 'LM3914BUN_1_DIP18_4_LM3914':;
+
+SECTION_NUMBER 1
+ '@PROIECT CAD.SCHEMATIC1(SCH_1):INS12037@PROIECT CAD.LM3914BUN_1.NORMAL(CHIPS)':
+ C_PATH='@\proiect cad\.schematic1(sch_1):ins12037@\proiect cad\.\lm3914bun_1.normal\(chips)',
+ P_PATH='@\proiect cad\.schematic1(sch_1):page_ins12037@\proiect cad\.\lm3914bun_1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+END.

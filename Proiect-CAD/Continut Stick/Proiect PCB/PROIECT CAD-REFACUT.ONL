@@ -1,0 +1,570 @@
+(PCB "PROIECT CAD-REFACUT"
+ (description
+  (timeStamp "2026 01 27 13 05 20")
+  (program "CAPTURE.EXE" (Version "17.2-2016 - D"))
+  (source "Original data from OrCAD/CAPTURE schematic")
+  (title "")
+  (date "January 27, 2026")
+  (document "C:\\USERS\\DANY\\DESKTOP\\PROIECT TCAD 2026- GRUPA 424D-PETRESCU-STOICA-DUMITRASCU\\CONTINUT STICK\\PROIECT PCB\\PROIECT CAD-REFACUT.DSN")
+  (revision "")
+  (organization "")
+  (address1 "")
+  (address2 "")
+  (address3 "")
+  (address4 "")
+  (partvaluecombine "{Value}")
+  (pcbfootprintcombine "{PCB Footprint}"))
+ (structure )
+ (placement
+  (component R
+   (place R1
+    (property 
+     (timestamp 0000013A)
+     ("Source Package" R)
+     (Value 1k)
+     ("PCB Footprint" RES400)))
+   (place R2
+    (property 
+     (timestamp 0000014A)
+     ("Source Package" R)
+     (Value 1.2k)
+     ("PCB Footprint" RES400))))
+  (component DIODE
+   (place D10
+    (property 
+     (timestamp 00000108)
+     ("Source Package" DIODE)
+     (Value "RED LED")
+     ("PCB Footprint" DO35)))
+   (place D1
+    (property 
+     (timestamp 00000078)
+     ("Source Package" DIODE)
+     (Value "YELLOW LED")
+     ("PCB Footprint" DO35)))
+   (place D2
+    (property 
+     (timestamp 00000088)
+     ("Source Package" DIODE)
+     (Value "YELLOW LED")
+     ("PCB Footprint" DO35)))
+   (place D3
+    (property 
+     (timestamp 00000098)
+     ("Source Package" DIODE)
+     (Value "YELLOW LED")
+     ("PCB Footprint" DO35)))
+   (place D4
+    (property 
+     (timestamp 000000A8)
+     ("Source Package" DIODE)
+     (Value "YELLOW LED")
+     ("PCB Footprint" DO35)))
+   (place D5
+    (property 
+     (timestamp 000000B8)
+     ("Source Package" DIODE)
+     (Value "YELLOW LED")
+     ("PCB Footprint" DO35)))
+   (place D6
+    (property 
+     (timestamp 000000C8)
+     ("Source Package" DIODE)
+     (Value "RED LED")
+     ("PCB Footprint" DO35)))
+   (place D7
+    (property 
+     (timestamp 000000D8)
+     ("Source Package" DIODE)
+     (Value "RED LED")
+     ("PCB Footprint" DO35)))
+   (place D8
+    (property 
+     (timestamp 000000E8)
+     ("Source Package" DIODE)
+     (Value "RED LED")
+     ("PCB Footprint" DO35)))
+   (place D9
+    (property 
+     (timestamp 000000F8)
+     ("Source Package" DIODE)
+     (Value "RED LED")
+     ("PCB Footprint" DO35))))
+  (component CAP
+   (place C2
+    (property 
+     (timestamp 0000017C)
+     ("Source Package" CAP)
+     (Value 0.1uF)
+     ("PCB Footprint" CAPCK05))))
+  (component CON2
+   (place CN1
+    (property 
+     (timestamp 0000004F)
+     ("Source Package" CON2)
+     (Value "0-10 VDC")
+     ("PCB Footprint" JUMPER2)))
+   (place CN2
+    (property 
+     (timestamp 0000005F)
+     ("Source Package" CON2)
+     (Value "12VDC INPUT")
+     ("PCB Footprint" JUMPER2))))
+  (component "DIODE ZENER"
+   (place ZD1
+    (property 
+     (timestamp 00000163)
+     ("Source Package" "DIODE ZENER")
+     (Value "10V DIODE ZENER")
+     ("PCB Footprint" DO35))))
+  (component JUMPER
+   (place J1
+    (property 
+     (timestamp 00000207)
+     ("Source Package" JUMPER)
+     (Value JUMPER)
+     ("PCB Footprint" JUMPER2))))
+  (component LM3914
+   (place U1
+    (property 
+     (timestamp 000001EE)
+     ("Source Package" LM3914)
+     (Value LM3914)
+     ("PCB Footprint" DIP18))))
+  (component "CAP POL"
+   (place C1
+    (property 
+     (timestamp 00000195)
+     ("Source Package" "CAP POL")
+     (Value 10uF/50V)
+     ("PCB Footprint" CAP196)))))
+ (library
+  (image "DIODE ZENER"
+   (property 
+    (sourcelib D:\\CAD\\TOOLS\\CAPTURE\\LIBRARY\\DISCRETE.OLB))
+   (pin 999 1
+    (property 
+     (pinname ANODE)
+     (pintype 4)
+     (Name ANODE)
+     (Number 1)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" GND)
+     (Order 0)
+     ("Is No Connect" False)))
+   (pin 999 2
+    (property 
+     (pinname CATHODE)
+     (pintype 4)
+     (Name CATHODE)
+     (Number 2)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N01422)
+     (Order 1)
+     ("Is No Connect" False))))
+  (image LM3914
+   (property 
+    (sourcelib "C:\\USERS\\DANY\\DESKTOP\\PROIECT CAD-REFACUT\\LIBRARY1.OLB"))
+   (pin 999 1
+    (property 
+     (pinname LED1)
+     (pintype 4)
+     (Name LED1)
+     (Number 1)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N00525)
+     (Order 0)
+     ("Is No Connect" False)))
+   (pin 999 2
+    (property 
+     (pinname "V-")
+     (pintype 4)
+     (Name "V-")
+     (Number 2)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" GND)
+     (Order 1)
+     ("Is No Connect" False)))
+   (pin 999 3
+    (property 
+     (pinname V+)
+     (pintype 4)
+     (Name V+)
+     (Number 3)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" 10V)
+     (Order 2)
+     ("Is No Connect" False)))
+   (pin 999 4
+    (property 
+     (pinname RLO)
+     (pintype 4)
+     (Name RLO)
+     (Number 4)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" GND)
+     (Order 3)
+     ("Is No Connect" False)))
+   (pin 999 5
+    (property 
+     (pinname SIGIN)
+     (pintype 4)
+     (Name SIGIN)
+     (Number 5)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N01402)
+     (Order 4)
+     ("Is No Connect" False)))
+   (pin 999 6
+    (property 
+     (pinname RHI)
+     (pintype 4)
+     (Name RHI)
+     (Number 6)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N01422)
+     (Order 5)
+     ("Is No Connect" False)))
+   (pin 999 7
+    (property 
+     (pinname REFOUT)
+     (pintype 4)
+     (Name REFOUT)
+     (Number 7)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N01462)
+     (Order 6)
+     ("Is No Connect" False)))
+   (pin 999 8
+    (property 
+     (pinname "REF ADJ")
+     (pintype 4)
+     (Name "REF ADJ")
+     (Number 8)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" GND)
+     (Order 7)
+     ("Is No Connect" False)))
+   (pin 999 9
+    (property 
+     (pinname MODE)
+     (pintype 4)
+     (Name MODE)
+     (Number 9)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N01267)
+     (Order 8)
+     ("Is No Connect" False)))
+   (pin 999 10
+    (property 
+     (pinname LED10)
+     (pintype 4)
+     (Name LED10)
+     (Number 10)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N00886)
+     (Order 9)
+     ("Is No Connect" False)))
+   (pin 999 11
+    (property 
+     (pinname LED9)
+     (pintype 4)
+     (Name LED9)
+     (Number 11)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N00874)
+     (Order 10)
+     ("Is No Connect" False)))
+   (pin 999 12
+    (property 
+     (pinname LED8)
+     (pintype 4)
+     (Name LED8)
+     (Number 12)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N00862)
+     (Order 11)
+     ("Is No Connect" False)))
+   (pin 999 13
+    (property 
+     (pinname LED7)
+     (pintype 4)
+     (Name LED7)
+     (Number 13)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N00850)
+     (Order 12)
+     ("Is No Connect" False)))
+   (pin 999 14
+    (property 
+     (pinname LED6)
+     (pintype 4)
+     (Name LED6)
+     (Number 14)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N00845)
+     (Order 13)
+     ("Is No Connect" False)))
+   (pin 999 15
+    (property 
+     (pinname LED5)
+     (pintype 4)
+     (Name LED5)
+     (Number 15)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N00763)
+     (Order 14)
+     ("Is No Connect" False)))
+   (pin 999 16
+    (property 
+     (pinname LED4)
+     (pintype 4)
+     (Name LED4)
+     (Number 16)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N00551)
+     (Order 15)
+     ("Is No Connect" False)))
+   (pin 999 17
+    (property 
+     (pinname LED3)
+     (pintype 4)
+     (Name LED3)
+     (Number 17)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N00539)
+     (Order 16)
+     ("Is No Connect" False)))
+   (pin 999 18
+    (property 
+     (pinname LED2)
+     (pintype 4)
+     (Name LED2)
+     (Number 18)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N00532)
+     (Order 17)
+     ("Is No Connect" False))))
+  (image R
+   (property 
+    (sourcelib D:\\CAD\\TOOLS\\CAPTURE\\LIBRARY\\DISCRETE.OLB))
+   (pin 999 1
+    (property 
+     (pinname 1)
+     (pintype 4)
+     (Name 1)
+     (Number 1)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" 10V)
+     (Order 0)
+     ("Is No Connect" False)))
+   (pin 999 2
+    (property 
+     (pinname 2)
+     (pintype 4)
+     (Name 2)
+     (Number 2)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N01422)
+     (Order 1)
+     ("Is No Connect" False))))
+  (image "CAP POL"
+   (property 
+    (sourcelib D:\\CAD\\TOOLS\\CAPTURE\\LIBRARY\\DISCRETE.OLB))
+   (pin 999 1
+    (property 
+     (pinname 1)
+     (pintype 4)
+     (Name 1)
+     (Number 1)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" 10V)
+     (Order 0)
+     ("Is No Connect" False)))
+   (pin 999 2
+    (property 
+     (pinname 2)
+     (pintype 4)
+     (Name 2)
+     (Number 2)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" GND)
+     (Order 1)
+     ("Is No Connect" False))))
+  (image CON2
+   (property 
+    (sourcelib D:\\CAD\\TOOLS\\CAPTURE\\LIBRARY\\CONNECTOR.OLB))
+   (pin 999 1
+    (property 
+     (pinname 1)
+     (pintype 4)
+     (Name 1)
+     (Number 1)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" GND)
+     (Order 0)
+     ("Is No Connect" False)))
+   (pin 999 2
+    (property 
+     (pinname 2)
+     (pintype 4)
+     (Name 2)
+     (Number 2)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N01402)
+     (Order 1)
+     ("Is No Connect" False))))
+  (image CAP
+   (property 
+    (sourcelib D:\\CAD\\TOOLS\\CAPTURE\\LIBRARY\\DISCRETE.OLB))
+   (pin 999 1
+    (property 
+     (pinname 1)
+     (pintype 4)
+     (Name 1)
+     (Number 1)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" 10V)
+     (Order 0)
+     ("Is No Connect" False)))
+   (pin 999 2
+    (property 
+     (pinname 2)
+     (pintype 4)
+     (Name 2)
+     (Number 2)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" GND)
+     (Order 1)
+     ("Is No Connect" False))))
+  (image JUMPER
+   (property 
+    (sourcelib C:\\USERS\\DANY\\DESKTOP\\LIBRARY\\CONNECTOR.OLB))
+   (pin 999 1
+    (property 
+     (pinname 1)
+     (pintype 4)
+     (Name 1)
+     (Number 1)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N01267)
+     (Order 0)
+     ("Is No Connect" False)))
+   (pin 999 2
+    (property 
+     (pinname 2)
+     (pintype 4)
+     (Name 2)
+     (Number 2)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" 10V)
+     (Order 1)
+     ("Is No Connect" False))))
+  (image DIODE
+   (property 
+    (sourcelib D:\\CAD\\TOOLS\\CAPTURE\\LIBRARY\\DISCRETE.OLB))
+   (pin 999 1
+    (property 
+     (pinname A)
+     (pintype 4)
+     (Name A)
+     (Number 1)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" 10V)
+     (Order 0)
+     ("Is No Connect" False)))
+   (pin 999 2
+    (property 
+     (pinname K)
+     (pintype 4)
+     (Name K)
+     (Number 2)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N00886)
+     (Order 1)
+     ("Is No Connect" False)))))
+ (network
+  (net 10V
+   (pins
+     CN2-1 D1-1 D2-1 D3-1 D4-1 D5-1 D6-1 D7-1 D8-1
+     D9-1 D10-1 R1-1 C2-1 C1-1 U1-3 J1-2))
+  (net GND
+    (property 
+     (nettype S))
+   (pins
+     CN1-1 CN2-2 R2-2 ZD1-1 C2-2 C1-2 U1-2 U1-4 U1-8))
+  (net N00525
+   (pins
+     D1-2 U1-1))
+  (net N00532
+   (pins
+     D2-2 U1-18))
+  (net N00539
+   (pins
+     D3-2 U1-17))
+  (net N00551
+   (pins
+     D4-2 U1-16))
+  (net N00763
+   (pins
+     D5-2 U1-15))
+  (net N00845
+   (pins
+     D6-2 U1-14))
+  (net N00850
+   (pins
+     D7-2 U1-13))
+  (net N00862
+   (pins
+     D8-2 U1-12))
+  (net N00874
+   (pins
+     D9-2 U1-11))
+  (net N00886
+   (pins
+     D10-2 U1-10))
+  (net N01267
+   (pins
+     U1-9 J1-1))
+  (net N01402
+   (pins
+     CN1-2 U1-5))
+  (net N01422
+   (pins
+     R1-2 ZD1-2 U1-6))
+  (net N01462
+   (pins
+     R2-1 U1-7)))
+)

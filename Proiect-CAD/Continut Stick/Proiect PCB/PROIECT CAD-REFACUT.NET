@@ -1,0 +1,121 @@
+Wire List
+
+                                              Revised: January 27, 2026
+C:\USERS\DANY\DESKTOP\PROIECT TCAD 2026- GRUPARevision: 
+
+
+
+
+
+
+<<< Component List >>>
+10uF/50V                      C1        CAP196
+0.1uF                         C2        CAPCK05
+0-10 VDC                      CN1       JUMPER2
+12VDC INPUT                   CN2       JUMPER2
+YELLOW LED                    D1        DO35
+RED LED                       D10       DO35
+YELLOW LED                    D2        DO35
+YELLOW LED                    D3        DO35
+YELLOW LED                    D4        DO35
+YELLOW LED                    D5        DO35
+RED LED                       D6        DO35
+RED LED                       D7        DO35
+RED LED                       D8        DO35
+RED LED                       D9        DO35
+JUMPER                        J1        JUMPER2
+1k                            R1        RES400
+1.2k                          R2        RES400
+LM3914                        U1        DIP18
+10V DIODE ZENER               ZD1       DO35
+
+<<< Wire List >>>
+
+  NODE  REFERENCE    PIN #   PIN NAME           PIN TYPE       PART VALUE
+
+[00001] 10V
+        CN2             1       1               Passive        12VDC INPUT
+        D1              1       A               Passive        YELLOW LED
+        D2              1       A               Passive        YELLOW LED
+        D3              1       A               Passive        YELLOW LED
+        D4              1       A               Passive        YELLOW LED
+        D5              1       A               Passive        YELLOW LED
+        D6              1       A               Passive        RED LED
+        D7              1       A               Passive        RED LED
+        D8              1       A               Passive        RED LED
+        D9              1       A               Passive        RED LED
+        D10             1       A               Passive        RED LED
+        R1              1       1               Passive        1k
+        C2              1       1               Passive        0.1uF
+        C1              1       1               Passive        10uF/50V
+        U1              3       V+              Passive        LM3914
+        J1              2       2               Passive        JUMPER
+
+[00002] GND
+        CN1             1       1               Passive        0-10 VDC
+        CN2             2       2               Passive        12VDC INPUT
+        R2              2       2               Passive        1.2k
+        ZD1             1       ANODE           Passive        10V DIODE ZENER
+        C2              2       2               Passive        0.1uF
+        C1              2       2               Passive        10uF/50V
+        U1              2       V-              Passive        LM3914
+        U1              4       RLO             Passive        LM3914
+        U1              8       REF ADJ         Passive        LM3914
+
+[00003] N00525
+        D1              2       K               Passive        YELLOW LED
+        U1              1       LED1            Passive        LM3914
+
+[00004] N00532
+        D2              2       K               Passive        YELLOW LED
+        U1              18      LED2            Passive        LM3914
+
+[00005] N00539
+        D3              2       K               Passive        YELLOW LED
+        U1              17      LED3            Passive        LM3914
+
+[00006] N00551
+        D4              2       K               Passive        YELLOW LED
+        U1              16      LED4            Passive        LM3914
+
+[00007] N00763
+        D5              2       K               Passive        YELLOW LED
+        U1              15      LED5            Passive        LM3914
+
+[00008] N00845
+        D6              2       K               Passive        RED LED
+        U1              14      LED6            Passive        LM3914
+
+[00009] N00850
+        D7              2       K               Passive        RED LED
+        U1              13      LED7            Passive        LM3914
+
+[00010] N00862
+        D8              2       K               Passive        RED LED
+        U1              12      LED8            Passive        LM3914
+
+[00011] N00874
+        D9              2       K               Passive        RED LED
+        U1              11      LED9            Passive        LM3914
+
+[00012] N00886
+        D10             2       K               Passive        RED LED
+        U1              10      LED10           Passive        LM3914
+
+[00013] N01267
+        U1              9       MODE            Passive        LM3914
+        J1              1       1               Passive        JUMPER
+
+[00014] N01402
+        CN1             2       2               Passive        0-10 VDC
+        U1              5       SIGIN           Passive        LM3914
+
+[00015] N01422
+        R1              2       2               Passive        1k
+        ZD1             2       CATHODE         Passive        10V DIODE ZENER
+        U1              6       RHI             Passive        LM3914
+
+[00016] N01462
+        R2              1       1               Passive        1.2k
+        U1              7       REFOUT          Passive        LM3914
+

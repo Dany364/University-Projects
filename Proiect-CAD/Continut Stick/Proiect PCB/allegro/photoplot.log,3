@@ -1,0 +1,101 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    ARTWORK LOG                                                      )
+(                                                                     )
+(    Drawing          : PROIECT CAD 2-NEW.brd                         )
+(    Software Version : 17.2S025                                      )
+(    Date/Time        : Sun Jan 25 11:16:51 2026                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+ ---- Photoplot outline rectangle not found; using drawing extents.
+
+
+
+Results from parameter file ...
+    DEVICE-TYPE           GERBER_RS274X
+    OUTPUT-UNITS          MM
+    FILM-SIZE             2400000 1600000
+    FORMAT                2.5
+    ABORT-ON-ERROR        NO
+    SCALE                 1
+    SUPPRESS-LEAD-ZEROES  YES
+    SUPPRESS-TRAIL-ZEROES NO
+    SUPPRESS-EQUAL        YES
+    UNDEF-APT-CONT        NO
+
+
+
+================================================================
+     PROCESSING FILM < TOP >
+     TO FILE < C:/Users/Dany/Desktop/Proiect TCAD 2026- Grupa 424D-Petrescu-Stoica-Dumitrascu/Continut Stick/Proiect PCB/allegro/TOP.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.0000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.63500                                  DARK 
+  CIRCLE     1.39700                                  DARK 
+  CIRCLE     1.52400                                  DARK 
+  CIRCLE     1.65100                                  DARK 
+  SQUARE     1.39700                     0.000 NO     DARK 
+  SQUARE     1.52400                     0.000 NO     DARK 
+
+     TOP created.
+
+
+================================================================
+     PROCESSING FILM < BOTTOM >
+     TO FILE < C:/Users/Dany/Desktop/Proiect TCAD 2026- Grupa 424D-Petrescu-Stoica-Dumitrascu/Continut Stick/Proiect PCB/allegro/BOTTOM.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.0000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.30000                                  DARK 
+  CIRCLE     0.63500                                  DARK 
+  CIRCLE     1.10000                                  DARK 
+  CIRCLE     1.39700                                  DARK 
+  CIRCLE     1.52400                                  DARK 
+  CIRCLE     1.65100                                  DARK 
+  SQUARE     1.39700                     0.000 NO     DARK 
+  SQUARE     1.52400                     0.000 NO     DARK 
+
+     BOTTOM created.
+
+
+------------------------------------------------------
+ SUMMARY:
+        TOP created.
+        BOTTOM created.
+
+ ARTWORK finished
