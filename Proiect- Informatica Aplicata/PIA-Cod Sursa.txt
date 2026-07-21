@@ -1,0 +1,187 @@
+FINAL FINAL FINAL: #include <WiFi.h>
+#include <HTTPClient.h>
+#include <ArduinoJson.h>
+
+// --- CONFIG WiFi ---
+const char* ssid = "Orange-8108";
+const char* password = "463D4Ex77zxQe72dQ4";
+
+// --- SEGMENTE 7SEG INITIALE ---
+int segmentPins[7] = {12, 14, 32, 26, 25, 33, 27}; // Pinii colegului pentru segmente A-G
+const int digitPins[2] = {2, 13}; // DIGIT1 - GPIO2 (fost 35), DIGIT2 - GPIO13 (inversat)
+
+// --- VARIABILE ---
+String episodeName = "";
+String description = "";
+int seasonNumber = 0;
+int episodeNumber = 0;
+int id = 0;
+int mode = 1; // 1=10K+1, 2=6K+3, 3=3K
+
+// --- MATRICE SEGMENTE LITERE A-Z ---
+const byte letters[26][7] = {
+  {1,1,1,0,1,1,1}, // A
+  {0,0,1,1,1,1,1}, // B
+  {1,0,0,1,1,1,0}, // C
+  {0,1,1,1,1,0,1}, // D
+  {1,0,0,1,1,1,1}, // E
+  {1,0,0,0,1,1,1}, // F
+  {1,1,1,1,0,1,1}, // G
+  {0,1,1,0,1,1,1}, // H
+  {0,1,1,0,0,0,0}, // I
+  {0,1,1,1,0,0,0}, // J
+  {0,0,0,0,1,1,1}, // K (approx)
+  {0,0,0,1,1,1,0}, // L
+  {1,0,1,0,1,0,0}, // M (approx)
+  {1,1,1,0,1,1,0}, // N
+  {1,1,1,1,1,1,0}, // O
+  {1,1,0,0,1,1,1}, // P
+  {1,1,1,0,0,1,1}, // Q (approx)
+  {1,0,0,0,1,1,0}, // R
+  {1,0,1,1,0,1,1}, // S
+  {0,0,0,1,1,1,1}, // T
+  {0,1,1,1,1,1,0}, // U
+  {0,0,1,1,1,0,0}, // V
+  {0,1,0,1,0,1,0}, // W (approx)
+  {0,1,1,0,0,0,1}, // X
+  {0,1,1,1,0,1,1}, // Y
+  {1,1,0,1,1,0,1}  // Z
+};
+
+void setupWiFi() {
+  Serial.print("Conectare la "); Serial.println(ssid);
+  WiFi.begin(ssid, password);
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500); Serial.print(".");
+  }
+  Serial.println("\nConectat la rețea!");
+}
+
+void selectMode() {
+  Serial.println("Selectează modul:");
+  Serial.println("1 - 10K+1 (Episod South Park)");
+  Serial.println("2 - 6K+3 (puncte/steluțe)");
+  Serial.println("3 - 3K (alți pini GPIO)");
+
+  while (!Serial.available()) delay(10);
+  mode = Serial.readStringUntil('\n').toInt();
+
+  if (mode == 3) {
+    segmentPins[0] = 16; // A
+    segmentPins[1] = 17; // B
+    segmentPins[2] = 5;  // C
+    segmentPins[3] = 18; // D
+    segmentPins[4] = 19; // E
+    segmentPins[5] = 21; // F
+    segmentPins[6] = 22; // G
+  }
+}
+
+int readIDFromSerial() {
+  Serial.println("Introduceți ID episod:");
+  while (!Serial.available()) delay(10);
+  return Serial.readStringUntil('\n').toInt();
+}
+
+void getEpisodeData(int id) {
+  HTTPClient http;
+  String url = "http://proiectia.bogdanflorea.ro/api/south-park-episodes/episode?id=" + String(id);
+  http.begin(url);
+
+  int code = http.GET();
+  if (code > 0) {
+    String payload = http.getString();
+    StaticJsonDocument<1024> doc;
+    DeserializationError err = deserializeJson(doc, payload);
+    if (!err) {
+      episodeName = doc["name"].as<String>();
+      description = doc["description"].as<String>();
+      seasonNumber = doc["season"].as<int>();
+      episodeNumber = doc["episode"].as<int>();
+    }
+  }
+  http.end();
+}
+
+void clearDisplay() {
+  for (int i = 0; i < 7; i++) digitalWrite(segmentPins[i], LOW);
+  for (int i = 0; i < 2; i++) digitalWrite(digitPins[i], LOW);
+}
+
+void displayChar(char c, int digit) {
+  clearDisplay();
+  if (c >= 'a' && c <= 'z') c -= 32;
+  if (c >= 'A' && c <= 'Z') {
+    const byte* segs = letters[c - 'A'];
+    for (int i = 0; i < 7; i++) digitalWrite(segmentPins[i], !segs[i]);
+    digitalWrite(digitPins[digit], HIGH);
+  } else if (c >= '0' && c <= '9') {
+    byte num = c - '0';
+    const byte digits[10] = {0x7E,0x30,0x6D,0x79,0x33,0x5B,0x5F,0x70,0x7F,0x7B};
+    for (int i = 0; i < 7; i++) digitalWrite(segmentPins[i], !((digits[num] >> (6-i)) & 0x01));
+    digitalWrite(digitPins[digit], HIGH);
+  }
+  delay(5);
+}
+
+void scrollText(String text, char symbol = 0) {
+  text = " " + text + " ";
+  for (int i = 0; i < text.length() - 1; i++) {
+    unsigned long start = millis();
+    while (millis() - start < 330) {
+      displayChar(text[i], 0);   // DIGIT1 = GPIO2
+      displayChar(text[i+1], 1); // DIGIT2 = GPIO13
+    }
+    clearDisplay();
+    delay(80);
+
+    if (mode == 2 && symbol != 0) Serial.print(symbol);
+  }
+  if (mode == 2 && symbol != 0) Serial.println();
+  delay(1000);
+}
+
+void displayAll() {
+  Serial.println("PIA - Echipa 231");
+
+  if (mode == 1 || mode == 3) {
+    Serial.print("Sezon "); Serial.print(seasonNumber);
+    Serial.print(" Episod "); Serial.println(episodeNumber);
+    Serial.println(description);
+  }
+
+  if (mode == 2) scrollText(String(id), '.');
+  else scrollText(String(id));
+
+  if (mode == 2) scrollText(String(episodeNumber), '-');
+  else scrollText(String(episodeNumber));
+
+  if (mode == 2) scrollText(episodeName, '*');
+  else scrollText(episodeName);
+
+  Serial.println("Personaje din South Park");
+  Serial.print("WiFi: ");
+  Serial.print(ssid);
+  Serial.print(" RSSI: ");
+  Serial.print(WiFi.RSSI());
+  Serial.println(" dB");
+  Serial.println("------------------------------");
+}
+
+void setup() {
+  Serial.begin(115200);
+  Serial.println("PIA - Echipa 231");
+
+  for (int i = 0; i < 7; i++) pinMode(segmentPins[i], OUTPUT);
+  for (int i = 0; i < 2; i++) pinMode(digitPins[i], OUTPUT);
+  clearDisplay();
+  setupWiFi();
+  selectMode();
+  id = readIDFromSerial();
+  getEpisodeData(id);
+}
+
+void loop() {
+  displayAll();
+  while (1);
+}
